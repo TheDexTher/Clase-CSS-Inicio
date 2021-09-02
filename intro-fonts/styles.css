@@ -1,0 +1,12 @@
+h3, p{
+    color: peru;
+}
+/* Fonte weigt no es lo mismo que tamaño */
+/* Cuando tiene el mismo valor, el de abajo siempre tiene la prioridad */
+h3{
+    font-weight: 100;
+}
+p{
+    color: blue;
+    font-weight: 700;
+}

@@ -1,0 +1,49 @@
+/* Asterisco sirve para hacer los reset de nivel mas bajo*/
+/* Es el elemento de especificidad mas baja (0,0,0) */
+
+*{
+    background-color: rgb(181, 128, 242);
+}
+/* Estilando usando etiquetas (Las etiquetas no llevan . los class si!!) */
+/* Las etiquetas tienen de especificidad (0,0,1) */
+h1{
+    color: rgb(30, 16, 63);
+    font-size: 7vh;
+    font-family: monospace;
+    background-color: blueviolet;
+    width: max-content;
+
+}
+/* Poniendo un estilo a una etiqueta que se repite varias veces */
+div{
+    background-color: saddlebrown;
+    margin-top: 3%;
+    padding: 2%;
+}
+/* Los class tienen de especificidad (0,1,0) */
+.div-distinto{
+    background-color: seagreen;
+}
+/* Los id tienen de especificidad (1,0,0) */
+#texto-principal{
+    color: red;
+}
+p.texto-secundario{
+    color: blue;
+}
+p.texto-secundario.texto2{
+    color: gray;
+}
+/* Important pasa por encima de todo! vale (1,0,0,0) */
+/* Podemos combinar las etiquetas (haciendo que el li sea heredero del ul se suman las especificidades a (0,0,2)  ) */
+ul li{
+    list-style-type: square;
+    color: rgb(90, 51, 51);
+    font-size: 4vh;
+}
+.texto-secundario span{
+    color:black;
+    font-weight: bold;
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
